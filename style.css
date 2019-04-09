@@ -1,0 +1,27 @@
+h1, h2 {
+  font-family: Lato;
+}
+
+#container {
+  position: absolute;
+  width: 70%;
+  right: 15%;
+  height: 500px;
+  background-color: #DDDDDD;
+}
+
+.link {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node {
+  cursor: move;
+  fill: #ccc;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node.fixed {
+  fill: #f00;
+}
