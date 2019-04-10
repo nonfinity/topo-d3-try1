@@ -15,7 +15,7 @@ let nodes = [];
 let edges = [];
 
 // 3. load the specified JSON data, populate the placeholder arrays then run the specified experiment
-d3.json("https://raw.githubusercontent.com/nonfinity/topo-d3-try1/master/cylinder.json", function(data) {
+d3.json("https://raw.githubusercontent.com/nonfinity/topo-d3-try1/master/graphs/cylinder.json", function(data) {
   //console.log(data);
   nodes = data["nodes"].slice();
   edges = data["edges"].slice();

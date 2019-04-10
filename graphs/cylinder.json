@@ -5,14 +5,14 @@
     {
       "id": 0,
       "class": "input",
-      "value": 0,
+      "value": 5,
       "label": "Height",
       "x": 100,
       "y": 100
     },{
       "id": 1,
       "class": "input",
-      "value": 0,
+      "value": 2,
       "label": "Radius",
       "x": 100,
       "y": 60
@@ -26,35 +26,35 @@
     },{
       "id": 3,
       "class": "math_const",
-      "value": 0,
+      "value": 3.14,
       "label": "Pi",
       "x": 100,
       "y": 5
     },{
       "id": 4,
       "class": "addition",
-      "value": 0,
+      "value": 11.28,
       "label": "plus",
       "x": 60,
       "y": 80
     },{
       "id": 5,
       "class": "multiplication",
-      "value": 0,
+      "value": 6.28,
       "label": "times",
       "x": 80,
       "y": 30
     },{
       "id": 6,
       "class": "multiplication",
-      "value": 0,
+      "value": 4,
       "label": "times",
       "x": 40,
       "y": 20
     },{
       "id": 7,
       "class": "multiplication",
-      "value": 0,
+      "value": 45.12,
       "label": "times",
       "x": 20,
       "y": 50
