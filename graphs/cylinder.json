@@ -25,7 +25,7 @@
       "y": 5
     },{
       "id": 3,
-      "class": "pi",
+      "class": "math_const",
       "value": 0,
       "label": "Pi",
       "x": 100,

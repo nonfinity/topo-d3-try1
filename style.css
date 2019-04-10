@@ -1,27 +1,102 @@
 h1, h2 {
   font-family: Lato;
+  text-align: center;
 }
 
-#container {
+.stage {
+  height: 400px;
+  width: 800px;
+  background-color: #F0F0F0;
+  border: 1px solid #000000;
   position: absolute;
-  width: 70%;
-  right: 15%;
-  height: 500px;
-  background-color: #DDDDDD;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
 }
 
-.link {
-  stroke: #000;
-  stroke-width: 1.5px;
+.stage .edge {
+  stroke: #225050;
 }
 
-.node {
-  cursor: move;
-  fill: #ccc;
-  stroke: #000;
-  stroke-width: 1.5px;
+.node{
+  stroke-width: 0px;
+  stroke: #000000;
 }
 
-.node.fixed {
-  fill: #f00;
+.node03 {
+  width: 100px;
+  height: 60px;
+  rx: 15;
+  ry: 15;
+  stroke-width: 1px;
+  stroke: #444444;
 }
+
+g .className {
+  fill: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+g .labelName {
+  fill: #203020;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+  font-weight: bold;
+}
+
+g .idName {
+  fill: #000000;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+g .valueRect {
+  fill: #C0C0C0;
+  stroke-width: 1px;
+  stroke: #444444;
+  height: 20px;
+  width: 80px;
+  rx: 8;
+  ry: 8;
+  opacity: 0.90;
+}
+
+.valueText {
+  fill: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+
+.gNodeBacker { 
+  fill: #F0F0F0;
+  width: 100px;
+  height: 60px;
+  rx: 15;
+  ry: 15;
+  opacity: 1.00;
+}
+.gNodeFronter { 
+  fill: #F0F0F0;
+  width: 100px;
+  height: 60px;
+  rx: 15;
+  ry: 15;
+  opacity: 0.30;
+}
+.gNodeFronter:hover { 
+  /*fill: #F0F0F0;
+  width: 100px;
+  height: 60px;
+  rx: 15;
+  ry: 15;*/
+  opacity: 0.00;
+}
+
+g > .input {          fill: lightcoral; }
+g > .value {          fill: orange; }
+g > .math_const {     fill: orchid;}
+g > .addition {       fill: green;}
+g > .multiplication { fill: lightskyblue;}
