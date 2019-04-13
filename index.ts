@@ -2,9 +2,26 @@
 import './style.css';
 import * as d3 from 'd3';
 
-// Write TypeScript code!
-const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>Topographic Tester</h1> <hr width="60%">`;
+// populate the menu from aaList.json
+d3.json("./tests/aaList.json", 
+  function(data) {
+    console.log(data); /*
+    let mitems = data["items"].slice();
+    let r;
+
+    for (let i in mitems) {
+      r = d3.select("#menuHome").append("span")
+      r.attr("class","menuItem " + mitems[i]["class"]);
+      
+      if(mitems[i]["link"] != "null") {
+        r = r.append("a").attr("href",mitems[i]["link"]);
+      }
+
+      r.append("text").text(mitems[i]["text"]);
+      
+    } //*/
+  });
+
 
 // 1. this creates the master d3 object that we use to present everything
 let vis = d3.select("#app").append("svg");
@@ -105,6 +122,9 @@ function mainWork02() {
 // third experiment. the goal here will be to:
 //    a. encapsulate nodes in a <g> that will be prepped to house multiple elements
 //    b. enable dragging and maybe a mild force diagram
+// results
+//    a. encapsulating multiple elements into a node was a success. Likely to build foundation for the future
+//    b. drag/drop partial hit. Nodes drag, can't seem to get edges to follow yet. Going to refactor and try in d3 v5 
 function mainWork03() {
   let xAdj = [8.0, -150]; // this because i made the source json data too small
   let yAdj = [2.0, 50]; // this because i made the source json data too small

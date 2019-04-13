@@ -3,15 +3,27 @@ h1, h2 {
   text-align: center;
 }
 
+td.menu {
+  width: 150px;
+  vertical-align: text-top;
+}
+
+td.menu span.menuItem {  display: block; }
+td.menu .m1 { margin-left: 0.00em; }
+td.menu .m2 { margin-left: 0.75em; }
+td.menu .m3 { margin-left: 1.50em; }
+
 .stage {
   height: 400px;
   width: 800px;
   background-color: #F0F0F0;
   border: 1px solid #000000;
+  /*
   position: absolute;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0%);
+  */
 }
 
 .stage .edge {
